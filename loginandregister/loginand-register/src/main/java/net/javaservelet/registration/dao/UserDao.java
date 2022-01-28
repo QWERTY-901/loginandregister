@@ -19,7 +19,7 @@ package net.javaservelet.registration.dao;
 	        Class.forName("com.mysql.jdbc.Driver");
 
 	        try (Connection connection = DriverManager
-	            .getConnection("jdbc:mysql://localhost:3306/register?useSSL=false", "root", "Mysql1234#");
+	            .getConnection("jdbc:mysql://localhost:3306/register?useSSL=false", "database", "root");
 
 	            // Step 2:Create a statement using connection object
 	            PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
